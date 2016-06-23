@@ -75,7 +75,7 @@ namespace COMP2007_S2016_MidTerm_2003003121
                                   select todo).FirstOrDefault();
                 }
 
-                // add form data to the new student record
+                // ad form data to the new student record
                 newTodo.TodoName = TodoNameTextBox.Text;
                 newTodo.TodoNotes = NotesTextBox.Text;
                 newTodo.Completed = Convert.ToBoolean (TodoCheckBox.Checked);
