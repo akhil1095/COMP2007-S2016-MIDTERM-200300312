@@ -26,12 +26,12 @@ namespace COMP2007_S2016_MidTerm_2003003121
         protected void GetTodo()
         {
             // populate the form with existing data from the database
-            int TodoID = Convert.ToInt32(Request.QueryString["StudentID"]);
+            int TodoID = Convert.ToInt32(Request.QueryString["TodoID"]);
 
             // connect to the EF DB
             using (TodoConnection db = new TodoConnection())
             {
-                // populate a student object instance with the TodoID from the URL Parameter
+                // populate a todo object instance with the TodoID from the URL Parameter
                 Todo updatedTodo = (from todo in db.Todos
                                           where todo.TodoID == TodoID
                                           select todo).FirstOrDefault();
@@ -58,7 +58,7 @@ namespace COMP2007_S2016_MidTerm_2003003121
             // Use EF to connect to the server
             using (TodoConnection db = new TodoConnection())
             {
-                // use the todos model to create a new student object and
+                // use the todos model to create a new todo object and
                 // save a new record
                 Todo newTodo = new Todo();
 
@@ -75,12 +75,12 @@ namespace COMP2007_S2016_MidTerm_2003003121
                                   select todo).FirstOrDefault();
                 }
 
-                // ad form data to the new student record
+                // add form data to the new todo
                 newTodo.TodoName = TodoNameTextBox.Text;
                 newTodo.TodoNotes = NotesTextBox.Text;
                 newTodo.Completed = Convert.ToBoolean (TodoCheckBox.Checked);
 
-                // use LINQ to ADO.NET to add / insert new student into the database
+                // use LINQ to ADO.NET to add / insert new todo into the database
 
                 if (TodoID == 0)
                 {
@@ -91,14 +91,16 @@ namespace COMP2007_S2016_MidTerm_2003003121
                 // save our changes - also updates and inserts
                 db.SaveChanges();
 
-                // Redirect back to the updated students page
+                // Redirect back to the updated TodoList page
                 Response.Redirect("~/TodoList.aspx");
             }
         }
 
         protected void TodoCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            
+                  
+                
+
         }
     }
 }

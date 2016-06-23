@@ -23,7 +23,7 @@ namespace COMP2007_S2016_MidTerm_2003003121
 
                 // show the Contoso Content area
                 TodoPlaceHolder.Visible = true;
-                PublicPlaceHolder.Visible = false;
+                //PublicPlaceHolder.Visible = false;
 
                 //if (HttpContext.Current.User.Identity.GetUserName() == "admin")
                 //{
@@ -34,7 +34,7 @@ namespace COMP2007_S2016_MidTerm_2003003121
             {
                 // only show login and register
                 TodoPlaceHolder.Visible = false;
-                PublicPlaceHolder.Visible = true;
+                //PublicPlaceHolder.Visible = true;
                 //UserPlaceHolder.Visible = false;
             }
             SetActivePage();
@@ -58,12 +58,12 @@ namespace COMP2007_S2016_MidTerm_2003003121
                 case "Todo List":
                     todo.Attributes.Add("class", "active");
                     break;
-                case "Login":
-                    login.Attributes.Add("class", "active");
-                    break;
-                case "Register":
-                    register.Attributes.Add("class", "active");
-                    break;
+                //case "Login":
+                //    login.Attributes.Add("class", "active");
+                //    break;
+                //case "Register":
+                //    register.Attributes.Add("class", "active");
+                //    break;
             }
         }
     }

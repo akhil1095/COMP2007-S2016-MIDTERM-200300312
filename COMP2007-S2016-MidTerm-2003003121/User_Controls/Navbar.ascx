@@ -16,17 +16,17 @@
             <ul class="nav navbar-nav navbar-right">
                 <li id="home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
 
-                
+                                    <li id="todo" runat="server"><a href="TodoList.aspx"><i class="fa fa-list-alt fa-lg"></i> Todo List</a></li>
+
                <%-- <asp:PlaceHolder ID="UserPlaceHolder" runat="server">
                     <li id="users" runat="server"><a href="/Admin/Users.aspx"><i class="fa fa-users fa-lg"></i> Users</a></li>
                 </asp:PlaceHolder>--%>
 
-                   <asp:PlaceHolder ID="PublicPlaceHolder" runat="server">
+                 <%--  <asp:PlaceHolder ID="PublicPlaceHolder" runat="server">
                     <li id="login" runat="server"><a href="/Login.aspx"><i class="fa fa-sign-in fa-lg"></i> Login</a></li>
                     <li id="register" runat="server"><a href="/Register.aspx"><i class="fa fa-user-plus fa-lg"></i> Register</a></li>
-                </asp:PlaceHolder>
+                </asp:PlaceHolder>--%>
                 <asp:PlaceHolder ID="TodoPlaceHolder" runat="server">
-                    <li id="todo" runat="server"><a href="TodoList.aspx"><i class="fa fa-list-alt fa-lg"></i> Todo List</a></li>
                     <li id="logout" runat="server"><a href="/Logout.aspx"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
                 </asp:PlaceHolder>
             </ul>

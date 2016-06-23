@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="COMP2007_S2016_MidTerm_2003003121.Login" %>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+<%--<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
 
         <div class="row">
@@ -60,4 +60,4 @@
     </div>
 
 
-</asp:Content>
+</asp:Content>--%>
