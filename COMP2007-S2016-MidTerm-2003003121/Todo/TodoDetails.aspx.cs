@@ -95,5 +95,10 @@ namespace COMP2007_S2016_MidTerm_2003003121
                 Response.Redirect("~/TodoList.aspx");
             }
         }
+
+        protected void TodoCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

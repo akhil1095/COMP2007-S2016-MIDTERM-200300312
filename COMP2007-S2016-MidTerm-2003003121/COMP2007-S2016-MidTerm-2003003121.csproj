@@ -84,6 +84,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
     <Content Include="Models\TodoModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>TodoModel.edmx</DependentUpon>
@@ -95,6 +97,7 @@
       <LastGenOutput>TodoModel.cs</LastGenOutput>
     </Content>
     <Content Include="packages.config" />
+    <Content Include="Register.aspx" />
     <Content Include="Site.Master" />
     <Content Include="Scripts\jquery-2.2.3.min.map" />
     <EntityDeploy Include="Models\TodoModel.edmx">
@@ -130,8 +133,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="TodoDetails.aspx" />
-    <Content Include="TodoList.aspx" />
+    <Content Include="Todo\TodoDetails.aspx" />
+    <Content Include="Todo\TodoList.aspx" />
     <Content Include="User_Controls\Jumbotron.ascx" />
     <Content Include="User_Controls\Navbar.ascx" />
     <Content Include="Scripts\app.js" />
@@ -155,6 +158,20 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Models\Todo.cs">
       <DependentUpon>TodoModel.tt</DependentUpon>
     </Compile>
@@ -173,18 +190,25 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TodoModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="TodoDetails.aspx.cs">
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Todo\TodoDetails.aspx.cs">
       <DependentUpon>TodoDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TodoDetails.aspx.designer.cs">
+    <Compile Include="Todo\TodoDetails.aspx.designer.cs">
       <DependentUpon>TodoDetails.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TodoList.aspx.cs">
+    <Compile Include="Todo\TodoList.aspx.cs">
       <DependentUpon>TodoList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TodoList.aspx.designer.cs">
+    <Compile Include="Todo\TodoList.aspx.designer.cs">
       <DependentUpon>TodoList.aspx</DependentUpon>
     </Compile>
     <Compile Include="User_Controls\Jumbotron.ascx.cs">

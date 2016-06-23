@@ -16,7 +16,7 @@
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="Done">Completed</label>
-                    <asp:CheckBox Text="" runat="server" CssClass="form-control" ID="TodoCheckBox" required="true" />
+                    <asp:CheckBox Text="" OnCheckedChanged="TodoCheckBox_CheckedChanged" runat="server" ID="TodoCheckBox" required="true" />
                 </div>
                 <div class="text-right">
                     <asp:Button Text="Cancel" ID="CancelButton" CssClass="btn btn-warning btn-lg" runat="server" 
